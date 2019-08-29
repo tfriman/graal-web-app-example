@@ -22,7 +22,7 @@
                    [:head (hiccup/include-css "screen.css")]
                    [:div.content
                     [:h2 (str "Hello " (:remote-addr request) " 🔥🔥🔥")]
-                    [:p (str "Headers: " (:headers request)]])
+                    [:p (str "Headers: " (:headers request))]])
                   (response/response)
                   (response/header "content-type" "text/html")))}]])))
 
